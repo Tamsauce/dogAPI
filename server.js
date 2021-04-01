@@ -1,9 +1,9 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const PORT = 8000  //cross origin request CORS 
+const PORT = 8000  
 
-app.use(cors())
+app.use(cors())  //cross origin request CORS 
 
 let rappers = {
     '21 savage':{
@@ -49,6 +49,37 @@ app.get('/api/rappers/:rapperName', (request, response) => {
    
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log (`Server running on port ${PORT}`)
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
