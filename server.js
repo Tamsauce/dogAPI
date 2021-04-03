@@ -2,6 +2,20 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const PORT = 8000  
+const MongoClient = require('mongodb').MongoClient 
+
+
+// const MongoClient = require('mongodb').MongoClient;
+// const uri = "mongodb+srv://DoggieDog:<password>@cluster0.fajr4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+// client.connect(err => {
+//   const collection = client.db("test").collection("devices");
+//   // perform actions on the collection object
+//   client.close();
+// });
+
+
+
 
 app.use(cors())  //cross origin request CORS 
 
